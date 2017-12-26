@@ -284,8 +284,24 @@ class jforegroundTemplate extends BaseTemplate {
 		</nav>
 		</div>
 		
+		<?php if (!$wgUser->isLoggedIn()): ?>
+		<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+		<div class="bsa-cpc"></div>
+		<script>
+  			(function(){
+    			if(typeof _bsa !== 'undefined' && _bsa) {
+					_bsa.init('default', 'CKYDK53N', 'placement:joomlaorg', {
+					target: '.bsa-cpc',
+					align: 'horizontal',
+					disable_css: 'true'
+					});
+      			}
+  			})();
+		</script>
+		<?php endif; ?>
+
 		<?php if ($wgjForegroundFeatures['NavWrapperType'] != '0') echo "</div>"; ?>
-		
+
 		<div id="page-content">
 		<div class="row">
 				<div class="large-12 columns">
@@ -332,7 +348,9 @@ class jforegroundTemplate extends BaseTemplate {
 					<article id="content">
 					<h1 class="title"><?php print $displaytitle; ?></h1>
 					<?php if ( $this->data['isarticle'] ) { ?><h3 id="tagline"><?php $this->msg( 'tagline' ) ?></h3>
-                                        
+                    
+
+                    
 					<div id="social">
 						<!-- AddThis Button BEGIN -->
 						<div class="addthis_sharing_toolbox"></div>
@@ -341,13 +359,7 @@ class jforegroundTemplate extends BaseTemplate {
 					</div>
 					<?php } ?>
 					
-					<h5 class="subtitle"><?php $this->html('subtitle') ?></h5>
-                    
-                    <?php if (!$wgUser->isLoggedIn()): ?>
-						<div id="ad">
-                        <script async="" type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=joomlaorg" id="_carbonads_js"></script>
-						</div>
-					<?php endif; ?>   
+					<h5 class="subtitle"><?php $this->html('subtitle') ?></h5> 
 
 					<div class="clear_both"></div>
 					<div class="mw-bodytext">

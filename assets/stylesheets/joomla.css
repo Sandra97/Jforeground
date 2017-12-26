@@ -158,4 +158,80 @@ h1.page-title {
     display: none;
 }
 }
+
+/* Buy sell ads CSS */
+
+.bsa-cpc {
+  border-top: solid 1px #2e8bdc;
+  border-bottom: solid 1px #0f233e;
+  background-color: #1c63a2;
+}
+
+.bsa-cpc #_default_ {
+  position: relative;
+  margin: 0 auto;
+  padding: .5em 15px;
+  max-width: 1149.50px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.bsa-cpc .default-ad {
+  display: none;
+}
+
+.bsa-cpc ._default_ {
+  display: inline;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.bsa-cpc ._default_ > * {
+  vertical-align: middle;
+}
+
+.bsa-cpc a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bsa-cpc a:hover {
+  color: #faa731;
+}
+
+.bsa-cpc .default-image {
+  display: none;
+}
+
+.bsa-cpc .default-title:after {
+  content: " — ";
+}
+
+.bsa-cpc .default-title,
+.bsa-cpc .default-description {
+  display: inline;
+  letter-spacing: .2px;
+  font-weight: 600;
+}
+
+.bsa-cpc .default-title {
+  position: relative;
+  margin-left: 8px;
+}
+
+.bsa-cpc .default-title:before {
+  position: relative;
+  top: -1px;
+  left: -8px;
+  padding: 2px 5px;
+  border: solid 1px #faa731;
+  color: #faa731;
+  content: "Sponsor";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+  line-height: 1;
+}
+
  
